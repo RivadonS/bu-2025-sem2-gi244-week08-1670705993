@@ -135,7 +135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &132895511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,6 +407,10 @@ PrefabInstance:
     - target: {fileID: 4356800953600124292, guid: fb82dfb8d1c7044c69afd2486befecb3, type: 3}
       propertyPath: m_Name
       value: FX_DirtSplatter
+      objectReference: {fileID: 0}
+    - target: {fileID: 4356800953600124292, guid: fb82dfb8d1c7044c69afd2486befecb3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -799,6 +803,7 @@ MonoBehaviour:
   jumpForce: 10
   gravityMultiplier: 2
   gameOver: 0
+  animator: {fileID: 1667492346595872702}
 --- !u!65 &1667492346595872700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -847,6 +852,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!95 &1667492346595872702 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5316224943294531085, guid: f2132836654cce146ae0fd83d2dc2a2d, type: 3}
+  m_PrefabInstance: {fileID: 1653295083643701775}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
