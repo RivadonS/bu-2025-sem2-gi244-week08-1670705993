@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     private InputAction jumpAction;
     // 5.8 add audio source variable to play crash sound
     private AudioSource audioSource;
+    public AudioClip audioJump;
+    public AudioClip audioCrash;
 
     private bool isOnGround = true;
 
@@ -50,6 +52,7 @@ public class PlayerController : MonoBehaviour
             isOnGround = false;
             animator.SetTrigger("Jump_trig");
             fxDirt.Stop();
+            audioSource.PlayOneShot(audioJump);
         }
     }
 
@@ -72,6 +75,7 @@ public class PlayerController : MonoBehaviour
                 transform.position,
                 Quaternion.identity
             );
+            audioSource.PlayOneShot(audioCrash);
         }
     }
 }
