@@ -135,7 +135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &132895511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,13 +404,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -121.02899
       objectReference: {fileID: 0}
+    - target: {fileID: 1438565936, guid: fb82dfb8d1c7044c69afd2486befecb3, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4356800953600124292, guid: fb82dfb8d1c7044c69afd2486befecb3, type: 3}
       propertyPath: m_Name
       value: FX_DirtSplatter
       objectReference: {fileID: 0}
     - target: {fileID: 4356800953600124292, guid: fb82dfb8d1c7044c69afd2486befecb3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -420,6 +424,11 @@ PrefabInstance:
 --- !u!4 &559113528 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1419152992, guid: fb82dfb8d1c7044c69afd2486befecb3, type: 3}
+  m_PrefabInstance: {fileID: 559113527}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &612828481 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1438565936, guid: fb82dfb8d1c7044c69afd2486befecb3, type: 3}
   m_PrefabInstance: {fileID: 559113527}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &835818919
@@ -804,6 +813,8 @@ MonoBehaviour:
   gravityMultiplier: 2
   gameOver: 0
   animator: {fileID: 1667492346595872702}
+  fxDirt: {fileID: 612828481}
+  fxExplosionPrefab: {fileID: 2630815748524575241, guid: cb7cd9b0c56a24d49a40784bd3203ae6, type: 3}
 --- !u!65 &1667492346595872700
 BoxCollider:
   m_ObjectHideFlags: 0
